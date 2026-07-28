@@ -1,398 +1,229 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-build="neon-slate-v2" data-theme="kr-neon-void">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공덕 마사지 이벤트 정보 | 프리미엄 마사지 상세 안내</title>
-    <meta name="description" content="공덕역 도보 3분, 프리미엄 마사지 이벤트 상세 정보. 스웨디시·타이·경락·스포츠 마사지 가격 및 시간 안내. 전화 010-6279-0862로 예약 문의하세요.">
-    <meta name="keywords" content="공덕 마사지, 공덕 마사지 이벤트, 공덕역 마사지, 공덕 스웨디시, 공덕 타이마사지, 마사지 가격, 경락마사지, 스포츠마사지">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <link rel="canonical" href="https://gongdeok-care-trend.link-hub.org/about.html">
-    <meta property="og:title" content="공덕 마사지 이벤트 정보 | 프리미엄 안마 · 경락 · 스포츠 마사지">
-    <meta property="og:description" content="공덕역 도보 3분, 프리미엄 마사지 이벤트 상세 정보. 합리적 가격에 프리미엄 케어를 경험하세요.">
-    <meta property="og:image" content="https://t3b07-gd-massage-evt-2.vercel.app/og-image.jpg">
-    <meta property="og:url" content="https://gongdeok-care-trend.link-hub.org/about.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ko_KR">
+    <title>공덕 마사지 이벤트 — 조건별 선택 가이드</title>
+    <meta name="description" content="공덕 지역 마사지 서비스를 이용할 때, 첫 방문자라면 어떤 준비를 해야 하며, 인원이나 시간대에 따라 서비스 경험이 어떻게 달라지는지 전문 가이드.">
+    <meta name="keywords" content="공덕 마사지 이벤트, 공덕 마사지 추천, 공덕 마사지 가격, 처음 마사지 가보기, 공덕 마사지 예약">
+    <meta name="author" content="Local-Guide-KG">
+    <meta name="generator" content="custom-cms-hydra-92">
+    
+    <!-- OG & Social -->
+    <meta property="og:title" content="공덕 마사지 이벤트 — 조건별 선택 가이드">
+    <meta property="og:description" content="인원, 시간대, 목적에 따라 달라지는 공덕 마사지 서비스의 핵심 정보. 첫 방문자를 위한 실질적인 선택 기준 제공.">
+    
+    <!-- CSS Core: Base Reset & Typography, Layout -->
     <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --c-bg: #0a0b10;
+            --c-text-main: #e6e8eb;
+            --c-text-muted: #949ba3;
+            --c-accent: #00f2ff; /* Neon Cyan */
+            --c-accent-dim: #00f2ff4d;
+            --c-brutal: #1a1b26;
+            --font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--c-bg);
+            color: var(--c-text-main);
+            font-family: var(--font-stack);
             line-height: 1.6;
-            color: #1a1a1a;
-            background-color: #fafafa;
+            font-size: 16px;
+            overflow-x: hidden;
+            min-height: 100vh;
         }
-        h1, h2, h3, h4 {
-            font-weight: 700;
+
+        h1, h2, h3 {
+            color: var(--c-text-main);
             line-height: 1.2;
+            margin-bottom: 0.5em;
+            font-weight: 700;
             letter-spacing: -0.02em;
         }
-        h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 1rem;
-        }
-        h2 {
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            margin-bottom: 0.75rem;
-        }
-        h3 {
-            font-size: clamp(1.25rem, 3vw, 1.75rem);
-            margin-bottom: 0.5rem;
-        }
-        p {
-            margin-bottom: 1rem;
-            font-size: 1.0625rem;
-        }
-        a {
-            color: #b8860b;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #8b6914;
-        }
-        .drop-cap::first-letter {
-            float: left;
-            font-size: 3.5em;
-            line-height: 0.8;
-            padding-right: 0.5rem;
-            color: #b8860b;
-            font-weight: 700;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: #fff;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
-        }
-        .nav-present {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        .nav-present .logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #b8860b;
-            letter-spacing: -0.02em;
-        }
-        .nav-present nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        .nav-present nav ul li a {
-            color: #ccc;
-            font-size: 0.9375rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-        .nav-present nav ul li a:hover,
-        .nav-present nav ul li a.active {
-            color: #b8860b;
-        }
-        .nav-present nav ul li a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #b8860b;
-            transition: width 0.3s ease;
-        }
-        .nav-present nav ul li a:hover::after {
-            width: 100%;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            padding: 5px;
-        }
-        .hamburger-menu span {
-            width: 25px;
-            height: 2px;
-            background: #fff;
-            transition: all 0.3s ease;
-        }
-        .tel-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: #b8860b;
-            color: #fff !important;
-            padding: 0.5rem 1.25rem;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 0.9375rem;
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-        .tel-link:hover {
-            background: #8b6914;
-            transform: scale(1.05);
-            color: #fff !important;
-        }
-        @media (max-width: 768px) {
-            .responsive-768 .nav-present nav ul {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #1a1a1a;
-                flex-direction: column;
-                padding: 1rem;
-                gap: 1rem;
-                border-top: 1px solid #333;
-            }
-            .responsive-768 .nav-present nav ul.open {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-            .responsive-768 .nav-present .tel-link {
-                font-size: 0.8125rem;
-                padding: 0.4rem 1rem;
-            }
-        }
-        @media (min-width: 769px) {
-            .hamburger-menu {
-                display: none !important;
-            }
-            .nav-present nav ul {
-                display: flex !important;
-            }
-        }
-        .hero-section {
-            padding: 4rem 0;
-            background: linear-gradient(180deg, #fafafa 0%, #f0ece4 100%);
-            text-align: center;
-        }
-        .hero-section h1 {
-            color: #1a1a1a;
-        }
-        .hero-section p {
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto 1.5rem;
-            font-size: 1.125rem;
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 4rem 0;
-        }
-        .info-card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-            border: 1px solid #e8e3dc;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .info-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
-        .info-card h3 {
-            color: #b8860b;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        .info-card ul {
-            list-style: none;
-            padding: 0;
-        }
-        .info-card ul li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #f0ece4;
-            font-size: 1.0625rem;
-            color: #333;
-        }
-        .info-card ul li:last-child {
-            border-bottom: none;
-        }
-        .info-card ul li span {
-            font-weight: 600;
-            color: #1a1a1a;
-        }
-        .price-tag {
-            display: inline-block;
-            background: #b8860b;
-            color: #fff;
-            padding: 0.25rem 1rem;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
-        }
-        .faq-section {
-            padding: 4rem 0;
-            background: #fff;
-        }
-        .faq-item {
-            border-bottom: 1px solid #e8e3dc;
-            padding: 1.5rem 0;
-        }
-        .faq-item h4 {
-            font-size: 1.25rem;
-            color: #1a1a1a;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-item h4::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: #b8860b;
-            transition: transform 0.3s ease;
-        }
-        .faq-item h4.active::after {
-            content: '−';
-            transform: rotate(180deg);
-        }
-        .faq-item p {
-            margin-top: 1rem;
-            color: #555;
-            display: none;
-        }
-        .faq-item p.show {
-            display: block;
-        }
-        .cta-section {
-            padding: 4rem 0;
-            text-align: center;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            color: #fff;
-        }
-        .cta-section h2 {
-            color: #fff;
-        }
-        .cta-section p {
-            color: #ccc;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-        .cta-section .tel-link {
-            font-size: 1.25rem;
-            padding: 0.75rem 2rem;
-        }
-        footer {
-            background: #1a1a1a;
-            color: #888;
-            padding: 2rem 0;
-            text-align: center;
-            font-size: 0.875rem;
-            border-top: 1px solid #333;
-        }
-        footer a {
-            color: #b8860b;
-        }
-        .map-placeholder {
-            background: #f0ece4;
-            border-radius: 12px;
-            padding: 3rem;
-            text-align: center;
-            color: #888;
-            margin: 2rem 0;
-            border: 2px dashed #d4cfc8;
-        }
+
+        h1 { font-size: clamp(2rem, 4vw, 3.5rem); text-transform: uppercase; }
+        h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-top: 2rem; border-bottom: 2px solid var(--c-accent-dim); padding-bottom: 0.5rem; display: inline-block; }
+        p { margin-bottom: 1.2rem; color: var(--c-text-muted); }
+        
+        a { color: var(--c-accent); text-decoration: none; transition: color 0.3s ease; font-weight: 600; }
+        a:hover { color: #fff; text-shadow: 0 0 8px var(--c-accent-dim); }
+
+        /* Layout Utilities */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .full-bleed { width: 100%; min-height: 100vh; display: flex; flex-direction: column; }
+        .full-bleed > div { flex: 1; display: flex; flex-direction: column; }
+
+        /* Components */
+        .brutal-border { border: 2px solid var(--c-brutal); background: rgba(0, 242, 255, 0.03); backdrop-filter: blur(5px); }
+        
+        .nav-present nav { position: sticky; top: 0; z-index: 100; background: var(--c-bg); border-bottom: 2px solid var(--c-accent-dim); padding: 1rem 0; }
+        .nav-present nav ul { display: flex; list-style: none; gap: 2rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        .nav-present nav a { color: var(--c-text-muted); transition: all 0.3s ease; }
+        .nav-present nav a:hover, .nav-present nav a.active { color: var(--c-accent); text-shadow: 0 0 5px var(--c-accent-dim); }
+
+        .grid-asym { display: grid; gap: 2rem; grid-template-columns: 1fr 1.5fr; align-items: start; }
+        @media (max-width: 768px) { .grid-asym { grid-template-columns: 1fr; } }
+
+        /* Info Card Style for Brutalist Look */
+        .info-card { background: var(--c-brutal); padding: 2rem; border-left: 4px solid var(--c-accent); margin-bottom: 2rem; position: relative; overflow: hidden; }
+        .info-card::before { content: ''; position: absolute; top: 0; right: 0; width: 100px; height: 100px; background: var(--c-accent-dim); border-radius: 50%; filter: blur(60px); opacity: 0.4; }
+        
+        .data-block { display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding: 1rem; border: 1px dashed var(--c-accent-dim); }
+        .tag { background: var(--c-accent-dim); color: #000; font-weight: bold; padding: 0.2rem 0.5rem; font-size: 0.8rem; text-transform: uppercase; border-radius: 2px; }
     </style>
+  <link rel="canonical" href="https://gongdeok-care-trend.link-hub.org/about.html">
+  <meta property="og:url" content="https://gongdeok-care-trend.link-hub.org/about.html">
 </head>
-<body>
-    <header class="responsive-768">
-        <div class="nav-present">
-            <div class="logo">공덕 마사지 이벤트</div>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/info" class="active">정보</a></li>
-                    <li><a href="/event">이벤트</a></li>
-                    <li><a href="/review">후기</a></li>
-                    <li><a href="/contact">연락처</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger-menu" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+<body class="full-bleed">
+
+<div class="container full-bleed" style="max-width: 1400px;">
+    
+    <!-- Navigation -->
+    <div class="nav-present">
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#" class="active">정보</a></li>
+                <li><a href="#">지도</a></li>
+                <li><a href="#">리뷰</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+    <header style="padding: 4rem 0; border-bottom: 1px solid var(--c-brutal);">
+        <div class="container">
+            <h1>공덕 마사지 이벤트 — 정보</h1>
+            <p style="font-size: 1.25rem; max-width: 80%; margin-top: 1rem;">
+                단순한 휴식 이상의 경험, 공덕 지역의 고급스러운 서비스 환경과 시간대별·인원별 맞춤형 이벤트를 분석합니다.
+            </p>
         </div>
     </header>
 
-    <section class="hero-section">
+    <!-- Main Content -->
+    <main class="container" style="padding: 4rem 0;">
+        
+        <!-- Section 1: Core Concept & Market Overview -->
+        <section>
+            <h2>1. 공덕 지역 마사지 시장의 이벤트 구조</h2>
+            <div class="grid-asym">
+                <div class="info-card">
+                    <p><strong>[시장 동향 분석]</strong> 공덕과 인근 서대문·중랑 경계 지대는 상업 밀집도 대비 주거 단지가 섞여 있어, 오피스맨을 중심으로 한 비즈니스형 마사지와 휴식형 마사지 시설이 혼재된 '하이브리드 시장'입니다. 이곳의 이벤트는 단순한 가격 인하를 넘어 <strong>'조건부 할인'</strong>과 <strong>'타임존 기반 프로모션'</strong>으로 나뉩니다.</p>
+                    <p><strong>[핵심 변수: 인원 및 목적]</strong> 대부분의 '10,000 원' 이벤트는 2~3 인 이상 동행 시 제공되거나, 커플·가족 단위 방문을 유도하는 경우가 많습니다. 반면, 혼자 방문하기 위한 '초단기 초저가' 이벤트는 오후 4 시 이후나 평일 낮 시간대 (오후 1 시~3 시) 에 집중되어 있습니다. 이용 목적에 따라 선택할 이벤트를 구분하여 접근해야 합니다.</p>
+                </div>
+                
+                <div class="data-block">
+                    <span style="font-size: 1.2rem; font-weight: bold;">조건 확인 필수</span>
+                    <span class="tag">인원 제한</span>
+                    <span class="tag">시간대별 할인</span>
+                    <span class="tag">최소 체류 시간</span>
+                </div>
+            </div>
+
+            <p>
+                공덕 지역의 마사지 서비스는 '첫 방문자'를 대상으로 한 이벤트가 가장 활발합니다. 이는 신규 고객 유입을 위한 마케팅 비용이 전담 인력에게 배분되어 있어, 실제 서비스 품질에 큰 영향을 주지 않으면서도 접근성을 높일 수 있는 구조입니다. 따라서 첫 방문 시에는 <strong>"신규 할인 쿠폰"</strong> 또는 <strong>"첫 이용 증정 이벤트"</strong>를 먼저 확인하는 것이 효율적입니다. 이는 단순한 가격 할인보다는 '무료 음료', '증언형 서비스 (필링 등)'가 추가되는 경우가 많아 실제 만족도를 높이는 요소로 작용합니다.
+            </p>
+
+            <div class="grid-asym">
+                <div class="info-card" style="border-left-color: #ff4d4d; background: rgba(255, 77, 77, 0.03);">
+                    <h3 style="color: #ff4d4d;">주의사항: 조건부 할인</h3>
+                    <p>
+                        '10% 할인'이나 '2 만 원 이벤트'와 같은 문구에는 주의해야 합니다. 이는 보통 특정 시간대 (오후 3 시 전), 혹은 최소 체류 시간 (90 분 이상) 을 충족할 때만 적용되는 경우가 많습니다. 
+                        예약 시 <strong>"조건 확인"</strong>을 요청하거나, 모바일 앱 (네이버 지도/카카오맵) 에서 '필터'를 통해 '최소 체류시간' 항목을 체크하는 것이 좋습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Time & Experience Analysis -->
+        <section style="margin-top: 4rem;">
+            <h2>2. 시간대별 서비스 경험 및 분위기</h2>
+            
+            <div class="grid-asym">
+                <div class="info-card">
+                    <p><strong>[오후 1 시~3 시 (점심시간대)]</strong> 이 시간대는 주로 점심 식사 후 피로 회복을 위해 방문하는 직장인이 주를 이룹니다. 공간의 분위기는 비교적 차분하며, 서비스 메뉴는 '스파치트'나 '피부 관리' 위주로 제공되는 경우가 많습니다. 이벤트로는 <strong>'점심시간 초단기 마사지'</strong> (40~60 분) 가 활발합니다.</p>
+                    <p><strong>[오후 8 시 이후 (야간)]</strong> 오후 8 시 이후는 퇴근 후 스트레스 해소를 위한 '야간 서비스' 수요가 급증합니다. 이 시간대에는 공간의 조명과 음악이 어두운 톤으로 전환되어 집중도가 높아지며, '완전 이완'을 지향하는 '딥티슈'나 '오일 마사지' 메뉴가 더 많이 선택됩니다. 이벤트로는 <strong>'야간 할인'</strong> (15~20% 할인) 이 제공되는 경우가 많습니다.</p>
+                </div>
+                
+                <div class="data-block">
+                    <span style="font-size: 1.2rem; font-weight: bold;">추천 시나리오</span>
+                    <span class="tag">점심시간 초단기</span>
+                    <span class="tag">야간 완전 이완</span>
+                    <span class="tag">커플/가족 단위</span>
+                </div>
+            </div>
+
+            <p>
+                시간대에 따라 제공되는 서비스의 질과 분위기는 확연히 다릅니다. 점심시간대는 '빠른 충전'을, 야간은 '깊은 휴식'을 원한다면 해당 시간에 맞는 이벤트를 선택해야 합니다. 예를 들어, 오후 2 시에 방문하여 '초단기 초저가' 이벤트를 이용하더라도, 실제 서비스 시간이 30 분이라면 심리적으로 부족함을 느낄 수 있습니다. 따라서 이벤트 페이지의 <strong>"예상 체류 시간"</strong>을 반드시 확인하고, 이를 고려하여 예약해야 합니다.
+            </p>
+
+            <div class="grid-asym">
+                <div class="info-card" style="border-left-color: #00f2ff;">
+                    <h3 style="color: var(--c-accent);">최적의 방문 조합</h3>
+                    <p>
+                        공덕 지역의 마사지 시설은 대부분 '오후 5 시'가 경계선이 됩니다. 오후 5 시 이전에는 비즈니스적인 분위기가 강하고, 이후부터는 휴식적인 분위기로 전환됩니다. 
+                        이를 고려하여 <strong>"오후 1 시~2 시: 초단기 마사지"</strong> 또는 <strong>"오후 7 시~9 시: 완전 이완형"</strong> 이벤트를 선택하는 것이 만족도를 높이는 최적의 조합입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Practical Guide for First-Timers -->
+        <section style="margin-top: 4rem;">
+            <h2>3. 첫 방문자를 위한 필수 체크리스트</h2>
+            
+            <div class="grid-asym">
+                <div class="info-card">
+                    <p><strong>[예약 및 결제]</strong> 대부분의 이벤트는 '사전 예약'이 필수입니다. 현장 대기 시에는 이벤트 적용이 제한되거나, 최소 체류 시간이 15 분 단위로 연장될 수 있습니다. 모바일 앱이나 전화로 예약할 때 <strong>"어떤 이벤트를 이용하려는지"</strong>를 명시하면 정확한 상담을 받을 수 있습니다.</p>
+                    <p><strong>[소지품 및 준비]</strong> 공덕 지역은 지하철 6 호선과 5 호선이 연결되어 접근성이 좋으나, 주차 공간이 제한된 경우가 많습니다. 대중교통 이용 시에는 '신규 할인 쿠폰'을 모바일로 저장해두는 것이 좋습니다. 또한, 많은 시설에서 '세면대'와 '장롱형 옷장'이 제공되므로 개인 소지품은 최소화하는 것이 좋습니다.</p>
+                </div>
+                
+                <div class="data-block">
+                    <span style="font-size: 1.2rem; font-weight: bold;">준비물 & 체크리스트</span>
+                    <span class="tag">모바일 예약</span>
+                    <span class="tag">신규 할인 쿠폰</span>
+                    <span class="tag">편의성 (주차/대중교통)</span>
+                </div>
+            </div>
+
+            <p>
+                특히, '초단기' 이벤트를 이용할 경우 30 분에서 40 분 사이로 짧게 끝나더라도, 공간의 분위기나 서비스 품질이 낮아서는 안 됩니다. 따라서 첫 방문 시에는 '신규 할인 쿠폰'과 함께 '기본 마사지 (60 분)' 옵션을 추가하는 것이 좋습니다. 이는 짧은 시간 동안 충분한 이완 효과를 얻을 수 있을 뿐만 아니라, 시설의 전반적인 위생과 환경을 직접 경험할 수 있는 기회입니다.
+            </p>
+
+            <div class="grid-asym">
+                <div class="info-card" style="border-left-color: #ff4d4d; background: rgba(255, 77, 77, 0.03);">
+                    <h3 style="color: #ff4d4d;">FAQ: 자주 묻는 질문</h3>
+                    <p><strong>Q. 이벤트 가격은 실제 결제 금액인가요?</strong><br>
+                        대부분 '할인 후 가격'을 의미하지만, 일부는 '원금 - 할인액'으로 계산되므로 상세 페이지를 확인해야 합니다.<br>
+                    </p>
+                    <p><strong>Q. 예약은 필수인가요?</strong><br>
+                        공덕 지역은 인기 이벤트가 빠르게 마감될 수 있으므로 사전 예약이 필수입니다.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="border-top: 2px solid var(--c-brutal); padding: 3rem 0; margin-top: auto;">
         <div class="container">
-            <h1>공덕 마사지 이벤트<br>상세 정보</h1>
-            <p class="drop-cap">형, 여긴 그냥 마사지샵이 아니야. 공덕역 3번 출구에서 걸어서 3분이면 도착하는데, 들어서는 순간부터 완전 다른 세상이 펼져져. 프리미엄이 뭔지 제대로 보여주는 곳이라고.</p>
-            <p>스웨디시부터 타이, 경락, 스포츠 마사지까지 다 있는데 가격도 합리적이야. 이벤트 중이라서 더 좋고. 밑에 자세히 나와있으니까 한번 읽어봐.</p>
+            <h3 style="font-size: 1.5rem; text-align: center;">공덕 마사지 이벤트 — 정보</h3>
+            <p style="text-align: center; max-width: 60%; margin: 2rem auto 0;">
+                이 페이지는 공덕 지역 마사지 서비스의 시장 동향, 시간대별 특징, 그리고 첫 방문자를 위한 실질적인 선택 가이드를 제공합니다. 
+                보다 정확한 정보는 각 시설의 공식 홈페이지 또는 예약 플랫폼을 통해 최신 이벤트를 확인하시기 바랍니다.
+            </p>
+            <div style="text-align: center; font-size: 0.9rem; color: var(--c-text-muted);">
+                &copy; Local-Guide-KG | Custom CMS Hydra-92
+            </div>
         </div>
-    </section>
+    </footer>
 
-    <section class="container info-grid">
-        <div class="info-card">
-            <h3>🕐 운영 시간</h3>
-            <ul>
-                <li><span>월~금</span> 10:00 - 22:00</li>
-                <li><span>토요일</span> 10:00 - 21:00</li>
-                <li><span>일요일</span> 12:00 - 20:00</li>
-                <li><span>공휴일</span> 12:00 - 20:00</li>
-                <li><span>마지막 접수</span> 마감 1시간 전</li>
-            </ul>
-        </div>
-        <div class="info-card">
-            <h3>📍 위치 & 연락처</h3>
-            <ul>
-                <li><span>주소</span> 서울 마포구 공덕동 123-45</li>
-                <li><span>공덕역</span> 3번 출구 도보 3분</li>
-                <li><span>주차</span> 건물 지하 주차장 (2시간 무료)</li>
-                <li><span>전화</span> 010-6279-0862</li>
-                <li><span>카톡</span> @공덕마사지</li>
-            </ul>
-        </div>
-        <div class="info-card">
-            <h3>💰 이벤트 가격</h3>
-            <ul>
-                <li><span>스웨디시 60분</span> <span class="price-tag">₩55,000</span> <span style="text-decoration: line-through; color: #999; margin-left: 0.5rem;">₩80,000</span></li>
-                <li><span>타이마사지 60분</span> <span class="price-tag">₩50,000</span> <span style="text-decoration: line-through; color: #999; margin-left: 0.5rem;">₩75,000</span></li>
-                <li><span>경락마사지 60분</span> <span class="price-tag">₩60,000</span> <span style="text-decoration: line-through; color: #999; margin-left: 0.5rem;">₩90,000</span></li>
-                <li><span>스포츠마사지 60분</span> <span class="price-tag">₩58,000</span> <span style="text-decoration: line-through; color: #999; margin-left: 0.5rem;">₩85,000</span></li>
-                <li><span>전신 패키지 120분</span> <span class="price-tag">₩100,000</span> <span style="text-decoration: line-through; color: #999; margin-left: 0.5rem;">₩150,000</span></li>
-            </ul>
-        </div>
-    </section>
+</div>
 
-    <section class="container">
-        <h2 style="text-align: center; margin-top: 2rem;">이벤트 상세 안내</h2>
-        <p class="drop-cap" style="max-width: 800px; margin: 0 auto 3rem;">형, 내가 직접 경험해보고 쓰는 후기인데 진짜야. 스웨디시는 완전 내 몸이 리셋되는 느낌이었어. 타이는 스트레칭이랑 같이 해서 시원하고, 경락은 얼굴이 작아진 느낌? 스포츠마사지는 운동하고 가면 근육 풀리는 게 장난 아니야.</p>
-        <div class="info-grid" style="margin-top: 0;">
-            <div class="info-card">
-                <h3>🎉 첫 방문 이벤트</
 </body>
 </html>
